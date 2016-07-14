@@ -1,0 +1,97 @@
+\hypertarget{classsignal}{}\section{signal Class Reference}
+\label{classsignal}\index{signal@{signal}}
+
+
+signal Class  
+
+
+
+
+{\ttfamily \#include $<$signal.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsignal_aa068699a62bd006f86bc19a0c5661392}{signal} (target\+::pin\+\_\+in \&p, unsigned long interval\+\_\+time)
+\begin{DoxyCompactList}\small\item\em signal constructor \end{DoxyCompactList}\item 
+int \hyperlink{classsignal_a628ebb9790ffc436aa5fcab324f532a2}{fill\+\_\+once} ()
+\begin{DoxyCompactList}\small\item\em fill\+\_\+once method \end{DoxyCompactList}\item 
+void \hyperlink{classsignal_a3ed2a8274e37c64d00b59215ad1c823f}{fill} ()
+\begin{DoxyCompactList}\small\item\em fill method \end{DoxyCompactList}\item 
+int \hyperlink{classsignal_a8636d01cd5d34d71b2ff12caa36292d2}{raw\+\_\+data\+\_\+buffer\+\_\+element} (int index)
+\begin{DoxyCompactList}\small\item\em raw\+\_\+data\+\_\+buffer\+\_\+element \end{DoxyCompactList}\item 
+int(\& \hyperlink{classsignal_a8db7e128db78990e31d8a62891b6ef4a}{get\+\_\+signal} ())\mbox{[}5760\mbox{]}
+\begin{DoxyCompactList}\small\item\em get signal \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+signal Class 
+
+This is a class made to get the signal for 2 minutes. The signal comes in on pin D7 on an arduino. It\textquotesingle{}s stored in the variable raw\+\_\+data\+\_\+buffer. The size of this variable is set so that 2 minutes and 4 seconds of the signal fit in. The fill method is used to fill the array. The get\+\_\+signal method is then used to return a reference to the filled array so that other parts of the code can use this as well. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{signal@{signal}!signal@{signal}}
+\index{signal@{signal}!signal@{signal}}
+\subsubsection[{\texorpdfstring{signal(target\+::pin\+\_\+in \&p, unsigned long interval\+\_\+time)}{signal(target::pin_in &p, unsigned long interval_time)}}]{\setlength{\rightskip}{0pt plus 5cm}signal\+::signal (
+\begin{DoxyParamCaption}
+\item[{target\+::pin\+\_\+in \&}]{p, }
+\item[{unsigned long}]{interval\+\_\+time}
+\end{DoxyParamCaption}
+)}\hypertarget{classsignal_aa068699a62bd006f86bc19a0c5661392}{}\label{classsignal_aa068699a62bd006f86bc19a0c5661392}
+
+
+signal constructor 
+
+This constructor method is given a pin. The levels of this are used as the signal input. 
+
+\subsection{Member Function Documentation}
+\index{signal@{signal}!fill@{fill}}
+\index{fill@{fill}!signal@{signal}}
+\subsubsection[{\texorpdfstring{fill()}{fill()}}]{\setlength{\rightskip}{0pt plus 5cm}void signal\+::fill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsignal_a3ed2a8274e37c64d00b59215ad1c823f}{}\label{classsignal_a3ed2a8274e37c64d00b59215ad1c823f}
+
+
+fill method 
+
+This is a void method fills the array with 2 minutes of signal. \index{signal@{signal}!fill\+\_\+once@{fill\+\_\+once}}
+\index{fill\+\_\+once@{fill\+\_\+once}!signal@{signal}}
+\subsubsection[{\texorpdfstring{fill\+\_\+once()}{fill_once()}}]{\setlength{\rightskip}{0pt plus 5cm}int signal\+::fill\+\_\+once (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsignal_a628ebb9790ffc436aa5fcab324f532a2}{}\label{classsignal_a628ebb9790ffc436aa5fcab324f532a2}
+
+
+fill\+\_\+once method 
+
+This methode can be called upon by something like a timer after which it will check the signal once. It wil also write the data to an array. \index{signal@{signal}!get\+\_\+signal@{get\+\_\+signal}}
+\index{get\+\_\+signal@{get\+\_\+signal}!signal@{signal}}
+\subsubsection[{\texorpdfstring{get\+\_\+signal())[5760]}{get_signal())[5760]}}]{\setlength{\rightskip}{0pt plus 5cm}int(\& signal\+::get\+\_\+signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+))\mbox{[}5760\mbox{]}}\hypertarget{classsignal_a8db7e128db78990e31d8a62891b6ef4a}{}\label{classsignal_a8db7e128db78990e31d8a62891b6ef4a}
+
+
+get signal 
+
+This method returns the reference to the filled array. \index{signal@{signal}!raw\+\_\+data\+\_\+buffer\+\_\+element@{raw\+\_\+data\+\_\+buffer\+\_\+element}}
+\index{raw\+\_\+data\+\_\+buffer\+\_\+element@{raw\+\_\+data\+\_\+buffer\+\_\+element}!signal@{signal}}
+\subsubsection[{\texorpdfstring{raw\+\_\+data\+\_\+buffer\+\_\+element(int index)}{raw_data_buffer_element(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}int signal\+::raw\+\_\+data\+\_\+buffer\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classsignal_a8636d01cd5d34d71b2ff12caa36292d2}{}\label{classsignal_a8636d01cd5d34d71b2ff12caa36292d2}
+
+
+raw\+\_\+data\+\_\+buffer\+\_\+element 
+
+This method asks for an index number and returns the data stored in that location of the raw\+\_\+data\+\_\+buffer\+\_\+element array 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{signal_8hpp}{signal.\+hpp}\item 
+signal.\+cpp\end{DoxyCompactItemize}

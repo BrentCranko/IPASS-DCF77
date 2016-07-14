@@ -1,0 +1,54 @@
+\hypertarget{_date_time_8hpp}{}\section{Date\+Time.\+hpp File Reference}
+\label{_date_time_8hpp}\index{Date\+Time.\+hpp@{Date\+Time.\+hpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_date_time}{Date\+Time}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_date_time}{Date\+Time} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_date_time_8hpp_af6491ac18669e7d94c149f231963d14d}{D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK} \{ \\*
+{\bfseries U\+N\+D\+E\+F\+I\+N\+ED} = 0, 
+{\bfseries M\+O\+N\+D\+AY}, 
+{\bfseries T\+U\+E\+S\+D\+AY}, 
+{\bfseries W\+E\+D\+N\+E\+S\+D\+AY}, 
+\\*
+{\bfseries T\+H\+U\+R\+S\+D\+AY}, 
+{\bfseries F\+R\+I\+D\+AY}, 
+{\bfseries S\+A\+T\+U\+R\+D\+AY}, 
+{\bfseries S\+U\+N\+D\+AY}
+ \}\begin{DoxyCompactList}\small\item\em Enum. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+hwlib\+::ostream \& \hyperlink{_date_time_8hpp_a1f23c106f83083e59f8752f652d861cc}{operator$<$$<$} (hwlib\+::ostream \&lhs, \hyperlink{_date_time_8hpp_af6491ac18669e7d94c149f231963d14d}{D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK} day\+\_\+of\+\_\+the\+\_\+week)
+\begin{DoxyCompactList}\small\item\em Day of the week stream insertion method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Date\+Time.\+hpp@{Date\+Time.\+hpp}!D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK@{D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK}}
+\index{D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK@{D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK}!Date\+Time.\+hpp@{Date\+Time.\+hpp}}
+\subsubsection[{\texorpdfstring{D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK}{DAYOFTHEWEEK}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{_date_time_8hpp_af6491ac18669e7d94c149f231963d14d}{}\label{_date_time_8hpp_af6491ac18669e7d94c149f231963d14d}
+
+
+Enum. 
+
+This enum get\textquotesingle{}s an integer value. It will be shown as one of the weekdays. 
+
+\subsection{Function Documentation}
+\index{Date\+Time.\+hpp@{Date\+Time.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date\+Time.\+hpp@{Date\+Time.\+hpp}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(hwlib\+::ostream \&lhs, D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+E\+K day\+\_\+of\+\_\+the\+\_\+week)}{operator<<(hwlib::ostream &lhs, DAYOFTHEWEEK day_of_the_week)}}]{\setlength{\rightskip}{0pt plus 5cm}hwlib\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{hwlib\+::ostream \&}]{lhs, }
+\item[{{\bf D\+A\+Y\+O\+F\+T\+H\+E\+W\+E\+EK}}]{day\+\_\+of\+\_\+the\+\_\+week}
+\end{DoxyParamCaption}
+)}\hypertarget{_date_time_8hpp_a1f23c106f83083e59f8752f652d861cc}{}\label{_date_time_8hpp_a1f23c106f83083e59f8752f652d861cc}
+
+
+Day of the week stream insertion method. 
+
+This operator overloads the standard operator for hwlib\+::ostream so it wil show the name of a weekday instead of the integer value. 

@@ -1,0 +1,151 @@
+\hypertarget{classdecoder}{}\section{decoder Class Reference}
+\label{classdecoder}\index{decoder@{decoder}}
+
+
+decoder Class  
+
+
+
+
+{\ttfamily \#include $<$decoder.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries decoder} (int(\&raw\+\_\+data\+\_\+buffer)\mbox{[}5760\mbox{]})\hypertarget{classdecoder_aa4861a3d7b4a602bc39c5a98cdacdad8}{}\label{classdecoder_aa4861a3d7b4a602bc39c5a98cdacdad8}
+
+\item 
+int(\& {\bfseries get\+\_\+decoded\+\_\+signal} ())\mbox{[}59\mbox{]}\hypertarget{classdecoder_a2c989045f5d1e46d515cf66415df45a5}{}\label{classdecoder_a2c989045f5d1e46d515cf66415df45a5}
+
+\item 
+bool \hyperlink{classdecoder_a38d771ce0c3b6cd655a15c9da7429ce7}{parity\+\_\+check\+\_\+all} ()
+\begin{DoxyCompactList}\small\item\em Parity check. \end{DoxyCompactList}\item 
+bool \hyperlink{classdecoder_afd5d052e769a29dcffcb2c6e70a2af6a}{process\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Process Data. \end{DoxyCompactList}\item 
+void \hyperlink{classdecoder_a493f8f194f8978ebee93f2c9b2cc72e6}{print\+\_\+decoded\+\_\+signal} ()
+\begin{DoxyCompactList}\small\item\em Print decoded signal. \end{DoxyCompactList}\item 
+int \hyperlink{classdecoder_ae06eff4f336207d51211cf95a3bc73c4}{calc\+\_\+minutes} ()
+\begin{DoxyCompactList}\small\item\em Calc min. \end{DoxyCompactList}\item 
+int \hyperlink{classdecoder_a55e0f9fe052686fa8099d39a6825320a}{calc\+\_\+hour} ()
+\begin{DoxyCompactList}\small\item\em Calc hour. \end{DoxyCompactList}\item 
+int \hyperlink{classdecoder_a2c6f8505b9fefe24877c326d2daa8eb5}{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month} ()
+\begin{DoxyCompactList}\small\item\em Calc day of the month. \end{DoxyCompactList}\item 
+int \hyperlink{classdecoder_a3a8409bbca54e137d5d158def93b6763}{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week} ()
+\begin{DoxyCompactList}\small\item\em Calc day of the week. \end{DoxyCompactList}\item 
+int \hyperlink{classdecoder_a4b897e3c425b2e88bf4438052f4cdf73}{calc\+\_\+month} ()
+\begin{DoxyCompactList}\small\item\em Calc month. \end{DoxyCompactList}\item 
+int \hyperlink{classdecoder_ad30b5b7508493ad12df798da42046f14}{calc\+\_\+year\+\_\+in\+\_\+century} ()
+\begin{DoxyCompactList}\small\item\em Calc year in century. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+decoder Class 
+
+This class is made to interpret the data stored in the raw\+\_\+data\+\_\+buffer. It consists of a buffer for the complete signal, a decoded buffer that holds 59 spaces and a marker variable for the start and end of the signal. The class decodes the given raw data and puts it in an array. It\textquotesingle{}s also the place where parity checks are made to see if the signal is correct. 
+
+\subsection{Member Function Documentation}
+\index{decoder@{decoder}!calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month@{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month}}
+\index{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month@{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month()}{calc_day_of_the_month()}}]{\setlength{\rightskip}{0pt plus 5cm}int decoder\+::calc\+\_\+day\+\_\+of\+\_\+the\+\_\+month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_a2c6f8505b9fefe24877c326d2daa8eb5}{}\label{classdecoder_a2c6f8505b9fefe24877c326d2daa8eb5}
+
+
+Calc day of the month. 
+
+Get\textquotesingle{}s the day of the month from the decoded signal \index{decoder@{decoder}!calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week@{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week}}
+\index{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week@{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week()}{calc_day_of_the_week()}}]{\setlength{\rightskip}{0pt plus 5cm}int decoder\+::calc\+\_\+day\+\_\+of\+\_\+the\+\_\+week (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_a3a8409bbca54e137d5d158def93b6763}{}\label{classdecoder_a3a8409bbca54e137d5d158def93b6763}
+
+
+Calc day of the week. 
+
+Get\textquotesingle{}s the day of the week from the decoded signal \index{decoder@{decoder}!calc\+\_\+hour@{calc\+\_\+hour}}
+\index{calc\+\_\+hour@{calc\+\_\+hour}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{calc\+\_\+hour()}{calc_hour()}}]{\setlength{\rightskip}{0pt plus 5cm}int decoder\+::calc\+\_\+hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_a55e0f9fe052686fa8099d39a6825320a}{}\label{classdecoder_a55e0f9fe052686fa8099d39a6825320a}
+
+
+Calc hour. 
+
+Get\textquotesingle{}s the hour from the decoded signal \index{decoder@{decoder}!calc\+\_\+minutes@{calc\+\_\+minutes}}
+\index{calc\+\_\+minutes@{calc\+\_\+minutes}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{calc\+\_\+minutes()}{calc_minutes()}}]{\setlength{\rightskip}{0pt plus 5cm}int decoder\+::calc\+\_\+minutes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_ae06eff4f336207d51211cf95a3bc73c4}{}\label{classdecoder_ae06eff4f336207d51211cf95a3bc73c4}
+
+
+Calc min. 
+
+Get\textquotesingle{}s the minutes from the decoded signal \index{decoder@{decoder}!calc\+\_\+month@{calc\+\_\+month}}
+\index{calc\+\_\+month@{calc\+\_\+month}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{calc\+\_\+month()}{calc_month()}}]{\setlength{\rightskip}{0pt plus 5cm}int decoder\+::calc\+\_\+month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_a4b897e3c425b2e88bf4438052f4cdf73}{}\label{classdecoder_a4b897e3c425b2e88bf4438052f4cdf73}
+
+
+Calc month. 
+
+Get\textquotesingle{}s the month from the decoded signal \index{decoder@{decoder}!calc\+\_\+year\+\_\+in\+\_\+century@{calc\+\_\+year\+\_\+in\+\_\+century}}
+\index{calc\+\_\+year\+\_\+in\+\_\+century@{calc\+\_\+year\+\_\+in\+\_\+century}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{calc\+\_\+year\+\_\+in\+\_\+century()}{calc_year_in_century()}}]{\setlength{\rightskip}{0pt plus 5cm}int decoder\+::calc\+\_\+year\+\_\+in\+\_\+century (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_ad30b5b7508493ad12df798da42046f14}{}\label{classdecoder_ad30b5b7508493ad12df798da42046f14}
+
+
+Calc year in century. 
+
+Get\textquotesingle{}s the year in century from the decoded signal \index{decoder@{decoder}!parity\+\_\+check\+\_\+all@{parity\+\_\+check\+\_\+all}}
+\index{parity\+\_\+check\+\_\+all@{parity\+\_\+check\+\_\+all}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{parity\+\_\+check\+\_\+all()}{parity_check_all()}}]{\setlength{\rightskip}{0pt plus 5cm}bool decoder\+::parity\+\_\+check\+\_\+all (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_a38d771ce0c3b6cd655a15c9da7429ce7}{}\label{classdecoder_a38d771ce0c3b6cd655a15c9da7429ce7}
+
+
+Parity check. 
+
+This runs the 3 private parity methods which check if the signal has degraded or not. It returns 1 for a good signal and 0 for a degraded signal. \index{decoder@{decoder}!print\+\_\+decoded\+\_\+signal@{print\+\_\+decoded\+\_\+signal}}
+\index{print\+\_\+decoded\+\_\+signal@{print\+\_\+decoded\+\_\+signal}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{print\+\_\+decoded\+\_\+signal()}{print_decoded_signal()}}]{\setlength{\rightskip}{0pt plus 5cm}void decoder\+::print\+\_\+decoded\+\_\+signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_a493f8f194f8978ebee93f2c9b2cc72e6}{}\label{classdecoder_a493f8f194f8978ebee93f2c9b2cc72e6}
+
+
+Print decoded signal. 
+
+This takes the signal and then sends it to output \index{decoder@{decoder}!process\+\_\+data@{process\+\_\+data}}
+\index{process\+\_\+data@{process\+\_\+data}!decoder@{decoder}}
+\subsubsection[{\texorpdfstring{process\+\_\+data()}{process_data()}}]{\setlength{\rightskip}{0pt plus 5cm}bool decoder\+::process\+\_\+data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classdecoder_afd5d052e769a29dcffcb2c6e70a2af6a}{}\label{classdecoder_afd5d052e769a29dcffcb2c6e70a2af6a}
+
+
+Process Data. 
+
+This function takes the raw data stream and decodes it. It takes the raw data buffer and decodes it into logical bits. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{decoder_8hpp}{decoder.\+hpp}\item 
+decoder.\+cpp\end{DoxyCompactItemize}

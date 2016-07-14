@@ -1,0 +1,66 @@
+\hypertarget{class_date_time}{}\section{Date\+Time Class Reference}
+\label{class_date_time}\index{Date\+Time@{Date\+Time}}
+
+
+\hyperlink{class_date_time}{Date\+Time} class.  
+
+
+
+
+{\ttfamily \#include $<$Date\+Time.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_time_a3ccfb87f7a2e9683b91964e32d907161}{Date\+Time} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_date_time}{Date\+Time}. \end{DoxyCompactList}\item 
+\hyperlink{class_date_time_a57a7c544d2a5675efbd7ce543d990f65}{Date\+Time} (const int minutes, const int hour, const int day\+\_\+of\+\_\+the\+\_\+week, const int day\+\_\+of\+\_\+the\+\_\+month, const int month, const int century, const int year\+\_\+in\+\_\+century)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_date_time}{Date\+Time}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&lhs, \hyperlink{class_date_time}{Date\+Time} pos)\hypertarget{class_date_time_a7bb2ce9194ffc50a69236696ee7d6841}{}\label{class_date_time_a7bb2ce9194ffc50a69236696ee7d6841}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_date_time}{Date\+Time} class. 
+
+This is an Abstract Data Type. It gets data from the decoder and shows it on screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{Date\+Time()}{DateTime()}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+::\+Date\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_time_a3ccfb87f7a2e9683b91964e32d907161}{}\label{class_date_time_a3ccfb87f7a2e9683b91964e32d907161}
+
+
+\hyperlink{class_date_time}{Date\+Time}. 
+
+Default constructor \index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{Date\+Time(const int minutes, const int hour, const int day\+\_\+of\+\_\+the\+\_\+week, const int day\+\_\+of\+\_\+the\+\_\+month, const int month, const int century, const int year\+\_\+in\+\_\+century)}{DateTime(const int minutes, const int hour, const int day_of_the_week, const int day_of_the_month, const int month, const int century, const int year_in_century)}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+::\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{const int}]{minutes, }
+\item[{const int}]{hour, }
+\item[{const int}]{day\+\_\+of\+\_\+the\+\_\+week, }
+\item[{const int}]{day\+\_\+of\+\_\+the\+\_\+month, }
+\item[{const int}]{month, }
+\item[{const int}]{century, }
+\item[{const int}]{year\+\_\+in\+\_\+century}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_time_a57a7c544d2a5675efbd7ce543d990f65}{}\label{class_date_time_a57a7c544d2a5675efbd7ce543d990f65}
+
+
+\hyperlink{class_date_time}{Date\+Time}. 
+
+Constructor for when all data is available. Most values are just the numeric values. Day\+\_\+of\+\_\+the\+\_\+week is an enum. 1 is monday and 7 is sunday. The signal doesn\textquotesingle{}t tell us in which century or millenia we\textquotesingle{}re in so that will be hardcoded. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_date_time_8hpp}{Date\+Time.\+hpp}\item 
+Date\+Time.\+cpp\end{DoxyCompactItemize}
